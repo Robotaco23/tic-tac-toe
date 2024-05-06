@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Inline Code */
+code {
+  font-size: 1em;
+  background-color: #1f1f1f;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* List Styles */
+ul {
+  padding-inline-start: 20px;
+  list-style-type: disc;
+}
+
+/* Game Components */
+.square {
+  background-color: #333;
+  border: 1px solid #555;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
+}
+
+.square:hover {
+  background-color: #444;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.board-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Status Text */
+.status {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* Game Layout */
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.game-board {
+  flex: 1;
+  min-width: 200px;
+}
+
+.game-info {
+  margin-left: 20px;
+  flex: 1;
+  min-width: 150px;
+}
